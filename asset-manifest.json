@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Scholar/static/css/main.073c9b0a.css",
+    "main.js": "/Scholar/static/js/main.790b5aea.js",
+    "static/js/787.fe4db9b2.chunk.js": "/Scholar/static/js/787.fe4db9b2.chunk.js",
+    "static/media/logo.svg": "/Scholar/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/Scholar/index.html",
+    "main.073c9b0a.css.map": "/Scholar/static/css/main.073c9b0a.css.map",
+    "main.790b5aea.js.map": "/Scholar/static/js/main.790b5aea.js.map",
+    "787.fe4db9b2.chunk.js.map": "/Scholar/static/js/787.fe4db9b2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.790b5aea.js"
+  ]
+}
