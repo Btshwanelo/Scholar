@@ -1,8 +1,5 @@
-import Dashboard from "./pages/Dashboard";
 import { Routes, Route, Link } from "react-router-dom";
-import Login from "./pages/Login";
-import Register from "./pages/Register";
-import Records from "./pages/Records";
+import { Records, Register, Login, Dashboard, Notfound } from "./pages";
 
 function App() {
   return (
@@ -11,6 +8,7 @@ function App() {
       <Route path="Scholar/register" element={<Register />} />
       <Route path="Scholar/dashboard" element={<Dashboard />} />
       <Route path="Scholar/records" element={<Records />} />
+      <Route path="*" element={<Notfound />} />
     </Routes>
   );
 }

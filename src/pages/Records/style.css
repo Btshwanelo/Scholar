@@ -1,0 +1,36 @@
+.records {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #f2edf3;
+}
+
+.main__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.7rem 2.5rem;
+}
+
+.table__container {
+  width: 100%;
+}
+
+.table-card {
+  background: #fff;
+  border-radius: 0.3125rem;
+  margin-left: 123px;
+  margin-right: 123px;
+}
+.table-card__body {
+  padding: 2.5rem;
+}
+
+table {
+  width: 100%;
+}
+
+th,
+tr {
+  text-align: start;
+}/*# sourceMappingURL=style.css.map */

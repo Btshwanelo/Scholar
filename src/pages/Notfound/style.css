@@ -1,0 +1,11 @@
+.not-found {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #f2edf3;
+}
+.not-found h1 {
+  color: #070752;
+  font-weight: bold;
+}/*# sourceMappingURL=style.css.map */

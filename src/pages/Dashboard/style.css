@@ -1,0 +1,54 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #f2edf3;
+}
+
+.main__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.7rem 2.5rem;
+}
+
+/*
+=============== 
+Dashboard Card
+===============
+*/
+.card__wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  width: 50%;
+  gap: 40px;
+}
+
+.card {
+  flex: 1 1 auto;
+  width: 260px;
+  border-radius: 0.3125rem;
+  color: var(--bs-white);
+  cursor: pointer;
+}
+.card__body {
+  padding: 2.5rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card:nth-child(1) {
+  background: linear-gradient(to right, #ffbf96, #fe7096);
+}
+.card:nth-child(2) {
+  background: linear-gradient(to right, #90caf9, #047edf 99%);
+}
+.card:nth-child(3) {
+  background: linear-gradient(to right, #84d9d2, #07cdae);
+}
+.card:nth-child(4) {
+  background: linear-gradient(to right, #da8cff, #9a55ff);
+}/*# sourceMappingURL=style.css.map */

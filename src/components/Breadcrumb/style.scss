@@ -1,0 +1,26 @@
+.breadcrumb__container {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.breadcrumb {
+  margin-left: 123px;
+  margin-right: 123px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+
+  &__item + &__item::before {
+    float: left;
+    padding-right: 0.5rem;
+    content: "/";
+  }
+
+  &__item + &__item {
+    padding-left: 0.5rem;
+  }
+}
+
+ol {
+  padding-inline-start: 0;
+}
