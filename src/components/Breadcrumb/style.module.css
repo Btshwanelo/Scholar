@@ -10,16 +10,22 @@
   display: flex;
   flex-direction: row;
 }
-.breadcrumb__item + .breadcrumb__item::before {
+.breadcrumb__item {
+  cursor: pointer;
+}
+.breadcrumb__item__active::before {
   float: left;
   padding-right: 0.5rem;
-  content: "/";
+  content: " /";
 }
 .breadcrumb__item + .breadcrumb__item {
   padding-left: 0.5rem;
 }
 
+.breadcrumb__item__active {
+  color: cornflowerblue;
+}
+
 ol {
-  -webkit-padding-start: 0;
-          padding-inline-start: 0;
-}/*# sourceMappingURL=style.css.map */
+  padding-inline-start: 0;
+}

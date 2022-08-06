@@ -18,7 +18,7 @@
 
 .table-card {
   background: #fff;
-  border-radius: 0.3125rem;
+  border-radius: 0;
   margin-left: 123px;
   margin-right: 123px;
 
@@ -28,10 +28,18 @@
 }
 
 table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
   width: 100%;
 }
 
-th,
-tr {
-  text-align: start;
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
 }
