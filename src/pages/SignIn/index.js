@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 
-const Login = () => {
+const SignIn = () => {
   return (
     <div className="login">
       <div className="content__wrapper">
@@ -27,4 +27,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default SignIn;

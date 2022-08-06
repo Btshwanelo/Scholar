@@ -3,7 +3,7 @@ import "./style.css";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 
-const Register = () => {
+const SignUp = () => {
   const formik = useFormik({
     initialValues: {
       firstName: "",
@@ -76,4 +76,4 @@ const Register = () => {
   );
 };
 
-export default Register;
+export default SignUp;
