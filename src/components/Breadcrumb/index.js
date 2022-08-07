@@ -1,10 +1,9 @@
 import React from "react";
-import WithRouter from "../HOC/WithRouter";
+import { WithRouter } from "../";
 import style from "./style.module.css";
 import { useNavigate } from "react-router-dom";
 
 const Breadcrumb = (props) => {
-  
   const pathnames = props.router.location.pathname.split("/").filter((x) => x);
   const navigate = useNavigate();
   return (
@@ -15,7 +14,7 @@ const Breadcrumb = (props) => {
             Home{" "}
           </li>
         ) : (
-          <li className={style.breadcrumb__item}>Home </li>
+          <li className={style.breadcrumb__item__active}>Home </li>
         )}
         {pathnames.map((name, index) => {
           const routeTo = `/${pathnames.slice(0, index + 1).join("/")}`;
