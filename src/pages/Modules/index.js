@@ -15,6 +15,7 @@ const Records = () => {
   const columns = useMemo(() => COLUMNS, []);
   const data = useMemo(() => MOCK_DATA, []);
 
+
   const {
     getTableProps,
     getTableBodyProps,
