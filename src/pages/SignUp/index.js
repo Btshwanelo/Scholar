@@ -1,7 +1,10 @@
 import React from "react";
-import "./style.css";
+import "./signup.css";
 import { useFormik } from "formik";
 import * as Yup from "yup";
+import { TextFieldGroup } from "../../components";
+import { FormLayout } from "../../Layouts";
+import { Link } from "react-router-dom";
 
 const SignUp = () => {
   const formik = useFormik({
@@ -23,56 +26,47 @@ const SignUp = () => {
       alert(JSON.stringify(values, null, 2));
     },
   });
+
   return (
-    <div className="register">
-      <div className="content__wrapper">
-        <div className="form__container">
-          <h4>Sign Up</h4>
-          <form onSubmit={formik.handleSubmit} className="form">
-            <div className="form__group">
-              <label htmlFor="firstName">First Name</label>
-              <input
-                type="text"
-                id="firstName"
-                placeholder="First Name"
-                {...formik.getFieldProps("firstName")}
-              />
-              {formik.touched.firstName && formik.errors.firstName ? (
-                <div className="error">{formik.errors.firstName}</div>
-              ) : null}
-            </div>
-            <div className="form__group">
-              <label htmlFor="lastName">Last Name</label>
-              <input
-                type="text"
-                id="lastName"
-                placeholder="Last Name"
-                {...formik.getFieldProps("lastName")}
-              />
-              {formik.touched.lastName && formik.errors.lastName ? (
-                <div className="error">{formik.errors.lastName}</div>
-              ) : null}
-            </div>
-            <div className="form__group">
-              <label htmlFor="email">Email</label>
-              <input
-                type="email"
-                id="email"
-                placeholder="Email"
-                {...formik.getFieldProps("email")}
-              />
-              {formik.touched.email && formik.errors.email ? (
-                <div className="error">{formik.errors.email}</div>
-              ) : null}
-            </div>
-            <button type="submit" className="btn btn--submit">
-              Submit
-            </button>
-            <button className=" btn btn--cancel">Cancel</button>
-          </form>
-        </div>
-      </div>
-    </div>
+    <FormLayout>
+      <h4 className="form__title">Sign Up</h4>
+      <form onSubmit={formik.handleSubmit} className="form">
+        <TextFieldGroup
+          label={"First Name"}
+          type={"text"}
+          id={"firstName"}
+          placeholder={"First Name"}
+          error={formik.errors.firstName}
+          touched={formik.touched.firstName}
+          fieldprops={formik.getFieldProps("firstName")}
+        />
+        <TextFieldGroup
+          label={"last Name"}
+          type={"text"}
+          id={"lastName"}
+          placeholder={"Last Name"}
+          error={formik.errors.lastName}
+          touched={formik.touched.lastName}
+          fieldprops={formik.getFieldProps("lastName")}
+        />
+        <TextFieldGroup
+          label={"Email"}
+          type={"email"}
+          id={"email"}
+          placeholder={"Email"}
+          error={formik.errors.email}
+          touched={formik.touched.email}
+          fieldprops={formik.getFieldProps("email")}
+        />
+        <button type="submit" className="btn btn--blue">
+          Submit
+        </button>
+        <button className=" btn btn--grey">Cancel</button>
+      </form>
+      <small>
+        Already have an account ? <Link to={"/signin"}>Sign In</Link>
+      </small>
+    </FormLayout>
   );
 };
 

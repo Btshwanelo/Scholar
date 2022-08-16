@@ -1,48 +1,66 @@
-.register {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.signup {
+  display: grid;
+  grid-auto-columns: auto auto;
+  grid-template-columns: 0.9fr 1.1fr 1fr 1fr;
+  grid-template-rows: 70px 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "header header header header" ". main main .";
+  justify-content: stretch;
+  justify-items: stretch;
+  height: 100vh;
   background: #f2edf3;
-  min-height: 100vh;
 }
 
-.content__wrapper {
+.header {
+  grid-area: header;
+}
+
+.main {
+  grid-area: main;
+  align-self: center;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
   background: #fff;
   color: black;
   display: flex;
   align-items: flex-start;
   border: 0;
   width: 600px;
-}
-.content__wrapper .form__container {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: auto;
   padding: 2.5rem 2.5rem;
+}
+
+.form {
+  margin-bottom: 1.5rem;
   width: 100%;
 }
-.content__wrapper h4 {
+.form__title {
   color: black;
   margin-bottom: 1.5rem;
   text-transform: capitalize;
   font-family: sans-serif;
   font-size: 1em;
   font-weight: 400;
-}
-
-.form {
-  margin-bottom: 1.5rem;
+  width: 100%;
 }
 .form__group {
   display: flex;
   flex-direction: column;
   margin-bottom: 1.5rem;
 }
-.form__group label {
+.form__group__label {
   font-size: 0.875rem;
   line-height: 1;
   vertical-align: top;
   margin-bottom: 0.5rem;
 }
-.form__group input {
+.form__group__input {
   border: 1px solid #ebedf2;
   font-size: 0.8125rem;
   display: block;
@@ -51,21 +69,28 @@
   font-weight: 400;
   border-radius: 2px;
 }
-.form .btn {
+
+.btn {
   padding: 0.875rem 2.5rem;
   border-radius: 0.1875rem;
   font-weight: 400;
   text-align: center;
   vertical-align: middle;
   border: 2px;
+  margin-right: 0.5rem;
 }
-.form .btn--submit {
-  background: #da8cff;
+.btn--blue {
+  background: #2b63db;
   color: #fff;
+  cursor: pointer;
 }
-.form .btn--cancel {
-  background: #f8f9fa;
+.btn--grey {
+  background: #d0d2d3;
   border-color: #f8f9fa;
   color: rgb(0, 0, 0);
-  margin-right: 0.5rem;
-}/*# sourceMappingURL=style.css.map */
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+}/*# sourceMappingURL=signup.css.map */

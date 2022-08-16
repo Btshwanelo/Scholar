@@ -15,8 +15,6 @@
   width: 120px;
 }
 .navbar__avatar {
-  display: flex;
-  align-items: center;
   margin-left: auto;
   cursor: pointer;
 }
@@ -32,25 +30,6 @@
 }
 .navbar__avatar p {
   margin: 0 4px 0 0;
-}
-
-.dropbtn {
-  background-color: #3498db;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-}
-
-.dropbtn:hover,
-.dropbtn:focus {
-  background-color: #2980b9;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
 }
 
 .dropdown-content {
@@ -70,8 +49,8 @@
   display: block;
 }
 
-.dropdown a:hover {
-  background-color: #ddd;
+.dropdown-content a:hover {
+  background-color: rgb(161, 158, 158);
 }
 
 .show {

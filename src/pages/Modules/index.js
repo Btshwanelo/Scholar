@@ -26,8 +26,6 @@ const Records = () => {
     canPreviousPage,
     prepareRow,
     pageOptions,
-    gotoPage,
-    pageCount,
     state,
     setGlobalFilter,
   } = useTable(
@@ -50,22 +48,23 @@ const Records = () => {
   return (
     <div className="records">
       <Navbar />
-      <div className="main__content">
+      <div className="main-content">
         <Breadcrumb />
-        <div className="table__container">
+        <div className="table-container">
           <div className="table-card">
             <div className="table-card__body">
-              <h2>Records Table</h2>
-              <span>
-                search:{" "}
+              <h2>Students</h2>
+              <div className="search">
+                Search{"  "}
                 <input
+                  className="table-input"
                   value={value || ""}
                   onChange={(e) => {
                     setValue(e.target.value);
                     onChange(e.target.value);
                   }}
                 />
-              </span>
+              </div>
               <table {...getTableProps()}>
                 <thead>
                   {headerGroups.map((headerGroup) => (
@@ -107,30 +106,28 @@ const Records = () => {
                   })}
                 </tbody>
               </table>
-              <span>
-                Page:{" "}
-                <strong>
-                  {pageIndex + 1} of {pageOptions.length}
-                </strong>{" "}
-              </span>
-              <button onClick={() => gotoPage(0)} disabled={!canPreviousPage}>
-                {"<<"}
-              </button>
-              <button
-                onClick={() => previousPage()}
-                disabled={!canPreviousPage}
-              >
-                Previous
-              </button>
-              <button onClick={() => nextPage()} disabled={!canNextPage}>
-                Next
-              </button>
-              <button
-                onClick={() => gotoPage(pageCount - 1)}
-                disabled={!canNextPage}
-              >
-                {">>"}
-              </button>
+              <div className="footer-row">
+                <span>
+                  Page:{" "}
+                  <strong>
+                    {pageIndex + 1} of {pageOptions.length}
+                  </strong>{" "}
+                </span>
+                <button
+                  className="navigation-btn"
+                  onClick={() => previousPage()}
+                  disabled={!canPreviousPage}
+                >
+                  {"<"}
+                </button>
+                <button
+                  className="navigation-btn"
+                  onClick={() => nextPage()}
+                  disabled={!canNextPage}
+                >
+                  {">"}
+                </button>
+              </div>
             </div>
           </div>
         </div>

@@ -1,53 +1,67 @@
-// @import "../../assets/sass/abstract/colors";
-
-.login {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.signup {
+  display: grid;
+  grid-auto-columns: auto auto;
+  grid-template-columns: 0.9fr 1.1fr 1fr 1fr;
+  grid-template-rows: 70px 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "header header header header"
+    ". main main .";
+  justify-content: stretch;
+  justify-items: stretch;
+  height: 100vh;
   background: #f2edf3;
-  min-height: 100vh;
+}
+.header {
+  grid-area: header;
 }
 
-.content__wrapper {
+.main {
+  grid-area: main;
+  align-self: center;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
   background: #fff;
   color: black;
   display: flex;
   align-items: flex-start;
   border: 0;
   width: 600px;
+  height: fit-content;
+  margin: auto;
+  padding: 2.5rem 2.5rem;
+}
 
-  .form__container {
-    padding: 2.5rem 2.5rem;
-    width: 100%;
-  }
+.form {
+  margin-bottom: 1.5rem;
+  width: 100%;
 
-  h4 {
+  &__title {
     color: black;
     margin-bottom: 1.5rem;
     text-transform: capitalize;
     font-family: sans-serif;
     font-size: 1em;
     font-weight: 400;
+    width: 100%;
   }
-}
-
-.form {
-  margin-bottom: 1.5rem;
 
   &__group {
     display: flex;
     flex-direction: column;
     margin-bottom: 1.5rem;
 
-    label {
+    &__label {
       font-size: 0.875rem;
       line-height: 1;
       vertical-align: top;
       margin-bottom: 0.5rem;
     }
 
-    input {
+    &__input {
       border: 1px solid #ebedf2;
       font-size: 0.8125rem;
       display: block;
@@ -67,15 +81,19 @@
   vertical-align: middle;
   border: 2px;
   margin-right: 0.5rem;
-  &--submit {
-    background: #da8cff;
+  &--blue {
+    background: #2b63db;
     color: #fff;
     cursor: pointer;
   }
-  &--cancel {
-    background: #f8f9fa;
+  &--grey {
+    background: #d0d2d3;
     border-color: #f8f9fa;
     color: rgb(0, 0, 0);
     cursor: pointer;
   }
+}
+
+.error {
+  color: red;
 }

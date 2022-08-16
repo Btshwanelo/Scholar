@@ -4,6 +4,7 @@ import {
   MdHourglassEmpty,
   MdLabelImportantOutline,
   MdKeyboardArrowDown,
+  MdKeyboardArrowUp,
 } from "react-icons/md";
 
 export default {
@@ -11,5 +12,6 @@ export default {
   hourClassIcon: <MdHourglassEmpty />,
   labelIcon: <MdLabelImportantOutline />,
   pictureIcon: <MdPictureInPicture />,
-  avatarIcon: <MdKeyboardArrowDown />,
+  avatarIconUp: <MdKeyboardArrowUp />,
+  avatarIconDown: <MdKeyboardArrowDown />,
 };

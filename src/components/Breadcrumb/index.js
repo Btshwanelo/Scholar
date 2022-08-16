@@ -1,5 +1,5 @@
 import React from "react";
-import { WithRouter } from "../";
+import WithRouter from "../HOC/index";
 import style from "./style.module.css";
 import { useNavigate } from "react-router-dom";
 
@@ -11,10 +11,12 @@ const Breadcrumb = (props) => {
       <ol className={style.breadcrumb}>
         {pathnames.length > 0 ? (
           <li onClick={() => navigate("/")} className={style.breadcrumb__item}>
-            Home{" "}
+            <a href="#">home</a>
           </li>
         ) : (
-          <li className={style.breadcrumb__item__active}>Home </li>
+          <li className={style.breadcrumb__item__first}>
+            home
+          </li>
         )}
         {pathnames.map((name, index) => {
           const routeTo = `/${pathnames.slice(0, index + 1).join("/")}`;
@@ -32,7 +34,7 @@ const Breadcrumb = (props) => {
               onClick={() => navigate(routeTo)}
               className={style.breadcrumb__item}
             >
-              {name}{" "}
+              <a href="#">{name}</a>
             </li>
           );
         })}

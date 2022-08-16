@@ -1,0 +1,101 @@
+// @import "../../assets/sass/abstract/colors";
+
+.signin {
+  display: grid;
+  grid-auto-columns: auto auto;
+  grid-template-columns: 0.9fr 1.1fr 1fr 1fr;
+  grid-template-rows: 70px 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "header header header header"
+    ". main main .";
+  justify-content: stretch;
+  justify-items: stretch;
+  height: 100vh;
+  background: #f2edf3;
+}
+.header {
+  grid-area: header;
+}
+
+.main {
+  grid-area: main;
+  align-self: center;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  color: black;
+  display: flex;
+  align-items: flex-start;
+  border: 0;
+  width: 600px;
+  height: fit-content;
+  margin: auto;
+  padding: 2.5rem 2.5rem;
+}
+
+.form {
+  margin-bottom: 1.5rem;
+  width: 100%;
+
+  &__title {
+    color: black;
+    margin-bottom: 1.5rem;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    width: 100%;
+  }
+
+  &__group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+
+    &__label {
+      font-size: 0.875rem;
+      line-height: 1;
+      vertical-align: top;
+      margin-bottom: 0.5rem;
+    }
+
+    &__input {
+      border: 1px solid #ebedf2;
+      font-size: 0.8125rem;
+      display: block;
+      color: black;
+      padding: 0.94rem 1.375rem;
+      font-weight: 400;
+      border-radius: 2px;
+    }
+  }
+}
+
+.btn {
+  padding: 0.875rem 2.5rem;
+  border-radius: 0.1875rem;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  border: 2px;
+  margin-right: 0.5rem;
+  &--blue {
+    background: #2b63db;
+    color: #fff;
+    cursor: pointer;
+  }
+  &--grey {
+    background: #d0d2d3;
+    border-color: #f8f9fa;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+  }
+}
+
+.error {
+  color: red;
+}

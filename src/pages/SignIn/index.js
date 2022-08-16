@@ -1,29 +1,64 @@
 import React from "react";
-import "./style.css";
+import "./signin.css";
+import { useFormik } from "formik";
+import * as Yup from "yup";
+import { TextFieldGroup } from "../../components/";
+import { Link, useNavigate } from "react-router-dom";
+import { FormLayout } from "../../Layouts";
 
 const SignIn = () => {
+  const navigate = useNavigate();
+  const formik = useFormik({
+    initialValues: {
+      firstName: "",
+      lastName: "",
+      email: "",
+    },
+    validationSchema: Yup.object({
+      firstName: Yup.string()
+        .max(15, "Must be 15 characters or less")
+        .required("Required"),
+      lastName: Yup.string()
+        .max(20, "Must be 20 characters or less")
+        .required("Required"),
+      email: Yup.string().email("Invalid email address").required("Required"),
+    }),
+    onSubmit: (values) => {
+      alert(JSON.stringify(values, null, 2));
+    },
+  });
+
   return (
-    <div className="login">
-      <div className="content__wrapper">
-        <div className="form__container">
-          <h4>Sign In</h4>
-          <form className="form">
-            <div className="form__group">
-              <label htmlFor="usernameInput">Email</label>
-              <input type="email" id="Email" placeholder="Email" />
-            </div>
-            <div className="form__group">
-              <label htmlFor="passwordInput">Password</label>
-              <input type="text" id="passwordInput" placeholder="Password" />
-            </div>
-            <button type="submit" className="btn btn--submit">
-              Submit
-            </button>
-            <button className="btn btn--cancel">Cancel</button>
-          </form>
-        </div>
-      </div>
-    </div>
+    <FormLayout>
+      <h4 className="form__title">Sign In</h4>
+      <form className="form" onSubmit={formik.handleSubmit}>
+        <TextFieldGroup
+          label={"First Name"}
+          type={"text"}
+          id={"firstName"}
+          placeholder={"First Name"}
+          error={formik.errors.firstName}
+          touched={formik.touched.firstName}
+          fieldprops={formik.getFieldProps("firstName")}
+        />
+        <TextFieldGroup
+          label={"Email"}
+          type={"email"}
+          id={"password"}
+          placeholder={"Email"}
+          error={formik.errors.email}
+          touched={formik.touched.email}
+          fieldprops={formik.getFieldProps("email")}
+        />
+        <button type="submit" className="btn btn--blue">
+          Submit
+        </button>
+        <button className="btn btn--grey">Cancel</button>
+      </form>
+      <small>
+        Dont have an account ? <Link to={"/signup"}>Sign Up</Link>
+      </small>
+    </FormLayout>
   );
 };
 

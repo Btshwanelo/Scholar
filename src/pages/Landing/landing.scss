@@ -1,0 +1,24 @@
+.landing {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-auto-columns: auto auto;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-content: stretch;
+  justify-items: stretch;
+  grid-template-areas: "main main main main";
+  height: 100vh;
+  background:#f2edf3
+}
+
+.main {
+  grid-area: main;
+  align-self: center;
+  justify-self: center;
+
+  &__buttons {
+    display: flex;
+    justify-content: center;
+  }
+}

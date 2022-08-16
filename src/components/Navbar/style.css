@@ -6,51 +6,36 @@
   font-family: "ubuntu-light", sans-serif;
   background: #fff;
 }
+
 .navbar__logo {
   display: flex;
   align-items: center;
   cursor: pointer;
 }
+
 .navbar__logo img {
   width: 120px;
 }
+
 .navbar__avatar {
-  display: flex;
-  align-items: center;
   margin-left: auto;
   cursor: pointer;
 }
+
 .navbar__avatar__wrapper {
   display: flex;
   align-items: center;
 }
+
 .navbar__avatar img {
   width: 40px;
   height: 40px;
   border-radius: 100%;
   margin-right: 1.25rem;
 }
+
 .navbar__avatar p {
   margin: 0 4px 0 0;
-}
-
-.dropbtn {
-  background-color: #3498db;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-}
-
-.dropbtn:hover,
-.dropbtn:focus {
-  background-color: #2980b9;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
 }
 
 .dropdown-content {
@@ -70,10 +55,10 @@
   display: block;
 }
 
-.dropdown a:hover {
-  background-color: #ddd;
+.dropdown-content a:hover {
+  background-color: rgb(161, 158, 158);
 }
 
 .show {
   display: block;
-}
+}/*# sourceMappingURL=style.css.map */
