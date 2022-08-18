@@ -2,14 +2,11 @@ import React from "react";
 
 import "./style.css";
 
-const Dropdown = ({ dropdown }) => {
+const Dropdown = ({ isDropdown }) => {
   return (
-    <div
-      id="myDropdown"
-      className={dropdown ? "dropdown-content show" : "dropdown-content"}
-    >
-      <a href="#about">Profile</a>
-      <a href="#contact">Sign Out</a>
+    <div className={isDropdown ? "dropdown-content show" : "dropdown-content"}>
+      <a href="#">Profile</a>
+      <a href="#">Sign Out</a>
     </div>
   );
 };

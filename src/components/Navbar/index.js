@@ -10,7 +10,7 @@ import avatar from "../../assets/images/face4.jpg";
 
 const Navbar = () => {
   const navigate = useNavigate();
-  const [dropdown, setDropdown] = useState(false);
+  const [isDropdown, setIsDropdown] = useState(false);
 
   return (
     <div className="navbar">
@@ -19,13 +19,13 @@ const Navbar = () => {
           <img src={logo} alt="logo" />
         </div>
       </div>
-      <div className="navbar-avatar" onClick={() => setDropdown(!dropdown)}>
+      <div className="navbar-avatar" onClick={() => setIsDropdown(!isDropdown)}>
         <div className="avatar-wrapper">
           <img src={avatar} alt="avatar" />
           <p>School One</p>
-          {dropdown ? icons.avatarIconUp : icons.avatarIconDown}
+          {isDropdown ? icons.avatarIconUp : icons.avatarIconDown}
         </div>
-        <Dropdown dropdown={dropdown} />
+        <Dropdown isDropdown={isDropdown} />
       </div>
     </div>
   );
