@@ -7,58 +7,34 @@
   background: #fff;
 }
 
-.navbar__logo {
+.navbar-logo {
   display: flex;
   align-items: center;
   cursor: pointer;
 }
 
-.navbar__logo img {
+.navbar-logo img {
   width: 120px;
 }
 
-.navbar__avatar {
+.navbar-avatar {
+  display: flex;
   margin-left: auto;
   cursor: pointer;
 }
 
-.navbar__avatar__wrapper {
+.avatar-wrapper {
   display: flex;
   align-items: center;
 }
 
-.navbar__avatar img {
+.navbar-avatar img {
   width: 40px;
   height: 40px;
   border-radius: 100%;
   margin-right: 1.25rem;
 }
 
-.navbar__avatar p {
+.navbar-avatar p {
   margin: 0 4px 0 0;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  overflow: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {
-  background-color: rgb(161, 158, 158);
-}
-
-.show {
-  display: block;
 }/*# sourceMappingURL=style.css.map */
