@@ -1,6 +1,8 @@
 import React, { useMemo, useState } from "react";
 import "./style.css";
-import { Navbar, Breadcrumb } from "../../components";
+import { Navbar, Breadcrumb, Table } from "../../components";
+import MOCK_DATA from "../../assets/MOCK_DATA.json";
+import { COLUMNS } from "../../assets/TableColumns";
 import {
   useTable,
   useSortBy,
@@ -8,24 +10,16 @@ import {
   usePagination,
   useAsyncDebounce,
 } from "react-table";
-import MOCK_DATA from "../../assets/MOCK_DATA.json";
-import { COLUMNS } from "../../assets/TableColumns";
 
 const Records = () => {
   const columns = useMemo(() => COLUMNS, []);
   const data = useMemo(() => MOCK_DATA, []);
 
-
   const {
-    getTableProps,
-    getTableBodyProps,
-    headerGroups,
-    page,
     nextPage,
     previousPage,
     canNextPage,
     canPreviousPage,
-    prepareRow,
     pageOptions,
     state,
     setGlobalFilter,
@@ -38,10 +32,8 @@ const Records = () => {
     useSortBy,
     usePagination
   );
-
   const { globalFilter, pageIndex } = state;
   const [value, setValue] = useState(globalFilter);
-
   const onChange = useAsyncDebounce((value) => {
     setGlobalFilter(value || undefined);
   }, 400);
@@ -66,47 +58,7 @@ const Records = () => {
                   }}
                 />
               </div>
-              <table {...getTableProps()}>
-                <thead>
-                  {headerGroups.map((headerGroup) => (
-                    <tr {...headerGroup.getHeaderGroupProps()}>
-                      {headerGroup.headers.map((column) => (
-                        <th
-                          {...column.getHeaderProps(
-                            column.getSortByToggleProps()
-                          )}
-                        >
-                          {column.render("Header")}
-                          <span>
-                            {column.isSorted
-                              ? column.isSortedDesc
-                                ? "D"
-                                : "^"
-                              : ""}
-                          </span>
-                        </th>
-                      ))}
-                    </tr>
-                  ))}
-                </thead>
-                <tbody {...getTableBodyProps()}>
-                  {page.map((row) => {
-                    prepareRow(row);
-                    return (
-                      <tr {...row.getRowProps()}>
-                        {row.cells.map((cell) => {
-                          return (
-                            <td {...cell.getCellProps()}>
-                              {" "}
-                              {cell.render("Cell")}
-                            </td>
-                          );
-                        })}
-                      </tr>
-                    );
-                  })}
-                </tbody>
-              </table>
+              <Table columns={columns} data={data} />
               <div className="footer-row">
                 <span>
                   Page:{" "}
