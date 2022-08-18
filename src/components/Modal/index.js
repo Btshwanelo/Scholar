@@ -1,24 +1,17 @@
 import React from "react";
-import styles from "./styles.module.css";
+
+import "./style.css";
 
 const Modal = () => {
   return (
-    <aside className={styles.modal__container}>
-      <div className={styles.modal}>
+    <aside className="modal-container">
+      <div className="modal">
         <h4>Remove all items from your shopping cart?</h4>
-        <div className={styles.btn__container}>
-          <button
-            type="button"
-            className={`${styles.btn}  ${styles.confirm__btn}`}
-            onClick={() => {}}
-          >
+        <div className="btn-container">
+          <button type="button" className="btn confirm-btn" onClick={() => {}}>
             confirm
           </button>
-          <button
-            type="button"
-            className={`${btn} ${clear__btn}`}
-            onClick={() => {}}
-          >
+          <button type="button" className="btn clear-btn" onClick={() => {}}>
             cancel
           </button>
         </div>
