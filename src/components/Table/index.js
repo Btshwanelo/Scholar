@@ -1,23 +1,15 @@
 import React from "react";
-import {
-  useTable,
-  useSortBy,
-  useGlobalFilter,
-  usePagination,
-} from "react-table";
 
-const Table = ({ data, columns }) => {
-  const { getTableProps, getTableBodyProps, headerGroups, page, prepareRow } =
-    useTable(
-      {
-        columns,
-        data,
-      },
-      useGlobalFilter,
-      useSortBy,
-      usePagination
-    );
+import "./style.css";
+import icons from "../../assets/icons";
 
+const Table = ({
+  page,
+  getTableProps,
+  getTableBodyProps,
+  headerGroups,
+  prepareRow,
+}) => {
   return (
     <table {...getTableProps()}>
       <thead>
@@ -27,7 +19,15 @@ const Table = ({ data, columns }) => {
               <th {...column.getHeaderProps(column.getSortByToggleProps())}>
                 {column.render("Header")}
                 <span>
-                  {column.isSorted ? (column.isSortedDesc ? "D" : "^") : ""}
+                  {column.isSorted ? (
+                    column.isSortedDesc ? (
+                      <span>{icons.tableDownIcon}</span>
+                    ) : (
+                      <span>{icons.tableUpIcon}</span>
+                    )
+                  ) : (
+                    ""
+                  )}
                 </span>
               </th>
             ))}

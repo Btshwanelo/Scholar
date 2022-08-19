@@ -1,0 +1,38 @@
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  border: 0px solid #f2edf3;
+  text-align: left;
+  font-family: "ubuntu-medium", sans-serif;
+  font-weight: initial;
+  font-size: 0.875em;
+  padding: 0.9375rem;
+}
+
+th {
+  border: 0px solid #f2edf3;
+  text-align: left;
+  font-family: "ubuntu-medium", sans-serif;
+  font-weight: bold;
+  font-size: 0.875em;
+  padding: 0.9375rem;
+}
+
+tr:nth-child(even) {
+  background-color: #f2edf3;
+}
+
+.table-input {
+  border: 1px solid #ebedf2;
+  font-size: 0.8125rem;
+  display: block;
+  color: black;
+  padding: 0.375rem;
+  font-weight: 400;
+  border-radius: 2px;
+  margin: 0 10px;
+}/*# sourceMappingURL=style.css.map */
