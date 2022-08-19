@@ -1,0 +1,36 @@
+.form-layout {
+  display: grid;
+  grid-auto-columns: auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 70px 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "header header header header"
+    "main main main main";
+  justify-content: stretch;
+  justify-items: stretch;
+  height: 100vh;
+  background: #f2edf3;
+}
+.form-layout-header {
+  grid-area: header;
+}
+
+.form-layout-main {
+  grid-area: main;
+  align-self: center;
+}
+
+.form-card-body {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  color: black;
+  display: flex;
+  align-items: flex-start;
+  border: 0;
+  width: 600px;
+  height: fit-content;
+  margin: auto;
+  padding: 2.5rem 2.5rem;
+}

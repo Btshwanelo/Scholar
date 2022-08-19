@@ -1,15 +1,16 @@
 import React from "react";
-import { Navbar } from "../../components";
+
 import "./style.css";
+import { Navbar } from "../../components";
 
 const FormLayout = ({ children }) => {
   return (
-    <div className="signup">
-      <div className="header">
+    <div className="form-layout">
+      <div className="form-layout-header">
         <Navbar />
       </div>
-      <div className="main">
-        <div className="card-body">{children}</div>
+      <div className="form-layout-main">
+        <div className="form-card-body">{children}</div>
       </div>
     </div>
   );
