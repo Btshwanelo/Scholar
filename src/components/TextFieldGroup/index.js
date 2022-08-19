@@ -1,13 +1,23 @@
 import React from "react";
 
-const TextFieldGroup = ({ label, type, id, placeholder, error, touched, fieldprops }) => {
+import "./style.css";
+
+const TextFieldGroup = ({
+  label,
+  type,
+  id,
+  placeholder,
+  error,
+  touched,
+  fieldprops,
+}) => {
   return (
-    <div className="form__group">
-      <label className="form__group__label" htmlFor="email">
+    <div className="form-group">
+      <label className="label" htmlFor="email">
         {label}
       </label>
       <input
-        className="form__group__input"
+        className="input"
         type={type}
         id={id}
         placeholder={placeholder}

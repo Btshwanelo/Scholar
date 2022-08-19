@@ -49,26 +49,6 @@
   font-weight: 400;
   width: 100%;
 }
-.form__group {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 1.5rem;
-}
-.form__group__label {
-  font-size: 0.875rem;
-  line-height: 1;
-  vertical-align: top;
-  margin-bottom: 0.5rem;
-}
-.form__group__input {
-  border: 1px solid #ebedf2;
-  font-size: 0.8125rem;
-  display: block;
-  color: black;
-  padding: 0.94rem 1.375rem;
-  font-weight: 400;
-  border-radius: 2px;
-}
 
 .btn {
   padding: 0.875rem 2.5rem;
@@ -89,8 +69,4 @@
   border-color: #f8f9fa;
   color: rgb(0, 0, 0);
   cursor: pointer;
-}
-
-.error {
-  color: red;
 }/*# sourceMappingURL=signin.css.map */

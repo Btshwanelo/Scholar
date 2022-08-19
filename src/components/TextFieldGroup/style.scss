@@ -1,0 +1,26 @@
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  font-size: 0.875rem;
+  line-height: 1;
+  vertical-align: top;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input {
+  border: 1px solid #ebedf2;
+  font-size: 0.8125rem;
+  display: block;
+  color: black;
+  padding: 0.94rem 1.375rem;
+  font-weight: 400;
+  border-radius: 2px;
+}
+
+.form-group .error {
+  color: red;
+}
