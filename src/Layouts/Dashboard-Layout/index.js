@@ -1,18 +1,19 @@
 import React from "react";
-import { Navbar, Breadcrumb } from "../../components";
+
 import "./style.css";
+import { Navbar, Breadcrumb } from "../../components";
 
 const DashboardLayout = ({ children }) => {
   return (
     <div className="dashboard">
-      <div className="Headers">
+      <div className="dashboard-header">
         <Navbar />
       </div>
-      <div className="Breadcrumbs">
+      <div className="dashboard-breadcrumbs">
         <Breadcrumb />
       </div>
-      <div className="Mains">
-        <div className="card__wrapper">{children}</div>
+      <div className="dashboard-main">
+        <div className="card-wrapper">{children}</div>
       </div>
     </div>
   );

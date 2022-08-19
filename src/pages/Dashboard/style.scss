@@ -97,3 +97,34 @@
   min-height: 100vh;
   background: #f2edf3;
 }
+
+.card {
+  flex: 1 1 auto;
+  width: 260px;
+  border-radius: 0.3125rem;
+  color: var(--bs-white);
+  cursor: pointer;
+
+  &__body {
+    padding: 2.5rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &:nth-child(1) {
+    background: linear-gradient(to right, #ffbf96, #fe7096);
+  }
+
+  &:nth-child(2) {
+    background: linear-gradient(to right, #90caf9, #047edf 99%);
+  }
+
+  &:nth-child(3) {
+    background: linear-gradient(to right, #84d9d2, #07cdae);
+  }
+
+  &:nth-child(4) {
+    background: linear-gradient(to right, #da8cff, #9a55ff);
+  }
+}
