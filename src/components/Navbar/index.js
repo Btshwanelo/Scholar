@@ -4,9 +4,9 @@ import { useNavigate } from "react-router-dom";
 
 import "./style.css";
 import Dropdown from "../Dropdown";
-import icons from "../../assets/icons";
 import logo from "../../assets/images/logo.svg";
 import avatar from "../../assets/images/face4.jpg";
+import { UpIcon, DownIcon } from "../../assets/icons";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -22,8 +22,8 @@ const Navbar = () => {
       <div className="navbar-avatar" onClick={() => setIsDropdown(!isDropdown)}>
         <div className="avatar-wrapper">
           <img src={avatar} alt="avatar" />
-          <p>School One</p>
-          {isDropdown ? icons.avatarIconUp : icons.avatarIconDown}
+          <p>Orlando High</p>
+          {isDropdown ? <UpIcon /> : <DownIcon />}
         </div>
         <Dropdown isDropdown={isDropdown} />
       </div>

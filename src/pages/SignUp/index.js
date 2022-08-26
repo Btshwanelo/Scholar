@@ -1,10 +1,12 @@
 import React from "react";
-import "./signup.css";
+
 import { useFormik } from "formik";
-import * as Yup from "yup";
-import { TextFieldGroup } from "../../components";
-import { FormLayout } from "../../Layouts";
 import { Link } from "react-router-dom";
+
+import "./signup.css";
+import * as Yup from "yup";
+import { FormLayout } from "../../Layouts";
+import { TextFieldGroup } from "../../components";
 
 const SignUp = () => {
   const formik = useFormik({
@@ -29,7 +31,7 @@ const SignUp = () => {
 
   return (
     <FormLayout>
-      <h4 className="form__title">Sign Up</h4>
+      <h4 className="form-title">Sign Up</h4>
       <form onSubmit={formik.handleSubmit} className="form">
         <TextFieldGroup
           label={"First Name"}

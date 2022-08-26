@@ -22,16 +22,15 @@
 .dashboard-main {
   grid-area: main;
   display: flex;
-  align-items: center;
   justify-content: center;
+  margin-top: 40px;
 }
 
 .card-wrapper {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  align-content: flex-start;
-  width: 50%;
-  gap: 40px;
+  justify-content: center;
+  width: 100%;
+  padding: 0 166px;
 }/*# sourceMappingURL=style.css.map */

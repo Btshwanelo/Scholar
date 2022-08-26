@@ -5,28 +5,46 @@
   background: #f2edf3;
 }
 
-.card {
-  flex: 1 1 auto;
-  width: 260px;
-  border-radius: 0.3125rem;
-  color: var(--bs-white);
-  cursor: pointer;
+.main-container {
+  display: grid;
+  grid-auto-columns: auto auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 200px 200px;
+  gap: 25px 25px;
+  grid-template-areas: "C1 C1 C2 C2" "C3 C3 C4 C4";
+  justify-content: stretch;
+  justify-items: stretch;
+  min-width: 1000px;
 }
-.card__body {
-  padding: 2.5rem 2.5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
+.first-card {
+  grid-area: C1;
 }
-.card:nth-child(1) {
+
+.first-card .dashboard-card {
   background: linear-gradient(to right, #ffbf96, #fe7096);
 }
-.card:nth-child(2) {
+
+.second-card {
+  grid-area: C2;
+}
+
+.second-card .dashboard-card {
   background: linear-gradient(to right, #90caf9, #047edf 99%);
 }
-.card:nth-child(3) {
+
+.third-card {
+  grid-area: C3;
+}
+
+.third-card .dashboard-card {
   background: linear-gradient(to right, #84d9d2, #07cdae);
 }
-.card:nth-child(4) {
+
+.fourth-card {
+  grid-area: C4;
+}
+
+.fourth-card .dashboard-card {
   background: linear-gradient(to right, #da8cff, #9a55ff);
 }/*# sourceMappingURL=style.css.map */

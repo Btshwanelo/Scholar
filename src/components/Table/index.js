@@ -1,7 +1,9 @@
 import React from "react";
 
+import PropTypes from "prop-types";
+
 import "./style.css";
-import icons from "../../assets/icons";
+import { UpIcon, DownIcon } from "../../assets/icons";
 
 const Table = ({
   page,
@@ -21,9 +23,9 @@ const Table = ({
                 <span>
                   {column.isSorted ? (
                     column.isSortedDesc ? (
-                      <span>{icons.tableDownIcon}</span>
+                      <DownIcon />
                     ) : (
-                      <span>{icons.tableUpIcon}</span>
+                      <UpIcon />
                     )
                   ) : (
                     ""
@@ -48,6 +50,14 @@ const Table = ({
       </tbody>
     </table>
   );
+};
+
+Table.propTypes = {
+  page: PropTypes.array,
+  getTableProps: PropTypes.func,
+  getTableBodyProps: PropTypes.func,
+  headerGroups: PropTypes.array,
+  prepareRow: PropTypes.func,
 };
 
 export default Table;

@@ -1,5 +1,6 @@
 import React from "react";
 
+import PropTypes from "prop-types";
 import { useNavigate } from "react-router-dom";
 
 import "./style.css";
@@ -28,6 +29,10 @@ const Breadcrumb = (props) => {
       </ul>
     </div>
   );
+};
+
+Breadcrumb.propTypes = {
+  props: PropTypes.object,
 };
 
 export default WithRouter(Breadcrumb);

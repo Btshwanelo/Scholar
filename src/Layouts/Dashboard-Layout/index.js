@@ -1,5 +1,7 @@
 import React from "react";
 
+import PropTypes from "prop-types";
+
 import "./style.css";
 import { Navbar, Breadcrumb } from "../../components";
 
@@ -17,6 +19,10 @@ const DashboardLayout = ({ children }) => {
       </div>
     </div>
   );
+};
+
+DashboardLayout.PropTypes = {
+  children: PropTypes.node,
 };
 
 export default DashboardLayout;

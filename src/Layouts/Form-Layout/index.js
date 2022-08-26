@@ -1,5 +1,7 @@
 import React from "react";
 
+import PropTypes from "prop-types";
+
 import "./style.css";
 import { Navbar } from "../../components";
 
@@ -14,6 +16,10 @@ const FormLayout = ({ children }) => {
       </div>
     </div>
   );
+};
+
+FormLayout.propTypes = {
+  children: PropTypes.node,
 };
 
 export default FormLayout;

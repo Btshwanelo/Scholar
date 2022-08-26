@@ -1,48 +1,47 @@
 import React from "react";
-import icons from "../../assets/icons";
+
+import {
+  BookmarkIcon,
+  HourClassIcon,
+  LabelIcon,
+  PictureIcon,
+} from "../../assets/icons";
 import "./style.css";
-import { useNavigate } from "react-router-dom";
 import { DashboardLayout } from "../../Layouts/";
+import { DashboardCard } from "../../components";
 
 const Dashboard = () => {
-  const navigate = useNavigate();
   return (
     <DashboardLayout>
-      <div className="card">
-        <div
-          className="card__body"
-          onClick={() => navigate("/dashboard/profile")}
-        >
-          <div>{icons.bookmarkIcon}</div>
+      <div className="main-container">
+        <div className="first-card">
+          <DashboardCard
+            title={"PROFILE"}
+            icon={<BookmarkIcon />}
+            navigateTo={"profile"}
+          />
+        </div>
+        <div className="second-card">
+          <DashboardCard
+            title={"STUDENTS"}
+            icon={<HourClassIcon />}
+            navigateTo={"students"}
+          />
+        </div>
 
-          <h4>PROFILE</h4>
+        <div className="third-card">
+          <DashboardCard
+            title={"MODULES"}
+            icon={<LabelIcon />}
+            navigateTo={"modules"}
+          />
         </div>
-      </div>
-      <div className="card">
-        <div
-          className="card__body"
-          onClick={() => navigate("/dashboard/students")}
-        >
-          {icons.hourClassIcon}
-          <h4>STUDENTS</h4>
-        </div>
-      </div>
-      <div className="card">
-        <div
-          className="card__body"
-          onClick={() => navigate("/dashboard/modules")}
-        >
-          {icons.labelIcon}
-          <h4>MODULES</h4>
-        </div>
-      </div>
-      <div className="card">
-        <div
-          className="card__body"
-          onClick={() => navigate("/dashboard/courses")}
-        >
-          {icons.pictureIcon}
-          <h4>COURSES</h4>
+        <div className="fourth-card">
+          <DashboardCard
+            title={"COURSES"}
+            icon={<PictureIcon />}
+            navigateTo={"courses"}
+          />
         </div>
       </div>
     </DashboardLayout>

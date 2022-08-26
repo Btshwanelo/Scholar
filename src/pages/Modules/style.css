@@ -19,31 +19,7 @@
 .table-card {
   background: #fff;
   border-radius: 0;
-  margin-left: 123px;
-  margin-right: 123px;
 }
 .table-card__body {
   padding: 2.5rem;
-}
-
-.table-controls {
-  display: flex;
-}
-
-.table-controls h4 {
-  margin: auto 0;
-}
-
-.navigation-btn {
-  border: none;
-  background: none;
-  width: 15px;
-  font-weight: bold;
-  font-size: xx-large;
-  margin: 0 5px;
-}
-
-.search {
-  display: flex;
-  margin-right: auto;
 }/*# sourceMappingURL=style.css.map */

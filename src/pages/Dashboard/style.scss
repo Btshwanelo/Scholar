@@ -1,96 +1,3 @@
-// @import "../../assets//sass/colors";
-
-// .dashboard {
-//   display: grid;
-//   grid-template-columns: 1fr 1fr 1fr 1fr;
-//   grid-template-rows: 70px 100px 1fr;
-//   grid-auto-columns: auto auto;
-//   gap: 0px 0px;
-//   grid-auto-flow: row;
-//   justify-content: stretch;
-//   justify-items: stretch;
-//   grid-template-areas:
-//     "Headers Headers Headers Headers"
-//     "Breadcrumbs Breadcrumbs Breadcrumbs Breadcrumbs"
-//     "Mains Mains Mains Mains";
-//   height: 100vh;
-// }
-
-// .Headers {
-//   grid-area: Headers;
-// }
-
-// .Breadcrumbs {
-//   grid-area: Breadcrumbs;
-// }
-
-// .Mains {
-//   grid-area: Mains;
-//   justify-self: center;
-// }
-
-// // .dashboard {
-// //   display: flex;
-// //   flex-direction: column;
-// //   min-height: 100vh;
-// //   background: #f2edf3;
-// //   color: $danger;
-// // }
-
-// // .main__contnt {
-// //   display: flex;
-// //   flex-direction: column;
-// //   align-items: center;
-// //   padding: 2.7rem 2.5rem;
-// // }
-
-// /*
-// ===============
-// Dashboard Card
-// ===============
-// */
-
-// .card__wrapper {
-//   display: flex;
-//   flex-direction: row;
-//   flex-wrap: wrap;
-//   justify-content: flex-start;
-//   align-content: flex-start;
-//   width: 50%;
-//   gap: 40px;
-// }
-
-// .card {
-//   flex: 1 1 auto;
-//   width: 260px;
-//   border-radius: 0.3125rem;
-//   color: var(--bs-white);
-//   cursor: pointer;
-
-//   &__body {
-//     padding: 2.5rem 2.5rem;
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//   }
-
-//   &:nth-child(1) {
-//     background: linear-gradient(to right, #ffbf96, #fe7096);
-//   }
-
-//   &:nth-child(2) {
-//     background: linear-gradient(to right, #90caf9, #047edf 99%);
-//   }
-
-//   &:nth-child(3) {
-//     background: linear-gradient(to right, #84d9d2, #07cdae);
-//   }
-
-//   &:nth-child(4) {
-//     background: linear-gradient(to right, #da8cff, #9a55ff);
-//   }
-// }
-
 .dashboard {
   display: flex;
   flex-direction: column;
@@ -98,33 +5,45 @@
   background: #f2edf3;
 }
 
-.card {
-  flex: 1 1 auto;
-  width: 260px;
-  border-radius: 0.3125rem;
-  color: var(--bs-white);
-  cursor: pointer;
-
-  &__body {
-    padding: 2.5rem 2.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  &:nth-child(1) {
-    background: linear-gradient(to right, #ffbf96, #fe7096);
-  }
-
-  &:nth-child(2) {
-    background: linear-gradient(to right, #90caf9, #047edf 99%);
-  }
-
-  &:nth-child(3) {
-    background: linear-gradient(to right, #84d9d2, #07cdae);
-  }
-
-  &:nth-child(4) {
-    background: linear-gradient(to right, #da8cff, #9a55ff);
-  }
+.main-container {
+  display: grid;
+  grid-auto-columns: auto auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 200px 200px;
+  gap: 25px 25px;
+  grid-template-areas:
+    "C1 C1 C2 C2"
+    "C3 C3 C4 C4";
+  justify-content: stretch;
+  justify-items: stretch;
+  min-width: 1000px;
 }
+.first-card {
+  grid-area: C1;
+}
+
+.first-card .dashboard-card {
+  background: linear-gradient(to right, #ffbf96, #fe7096);
+}
+.second-card {
+  grid-area: C2;
+}
+.second-card .dashboard-card {
+  background: linear-gradient(to right, #90caf9, #047edf 99%);
+}
+.third-card {
+  grid-area: C3;
+}
+
+.third-card .dashboard-card {
+  background: linear-gradient(to right, #84d9d2, #07cdae);
+}
+.fourth-card {
+  grid-area: C4;
+}
+
+.fourth-card .dashboard-card {
+  background: linear-gradient(to right, #da8cff, #9a55ff);
+}
+
+

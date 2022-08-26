@@ -1,13 +1,14 @@
 import React from "react";
-import "./signin.css";
-import { useFormik } from "formik";
+
 import * as Yup from "yup";
-import { TextFieldGroup } from "../../components/";
-import { Link, useNavigate } from "react-router-dom";
+import { useFormik } from "formik";
+import { Link } from "react-router-dom";
+
+import "./signin.css";
 import { FormLayout } from "../../Layouts";
+import { TextFieldGroup } from "../../components/";
 
 const SignIn = () => {
-  const navigate = useNavigate();
   const formik = useFormik({
     initialValues: {
       firstName: "",
@@ -30,7 +31,7 @@ const SignIn = () => {
 
   return (
     <FormLayout>
-      <h4 className="form__title">Sign In</h4>
+      <h4 className="form-title">Sign In</h4>
       <form className="form" onSubmit={formik.handleSubmit}>
         <TextFieldGroup
           label={"First Name"}

@@ -1,17 +1,14 @@
 .breadcrumb-container {
   width: 100%;
-  margin: 20px;
 }
 
 .breadcrumb {
-  margin-left: 123px;
-  margin-right: 123px;
   list-style-type: none;
   display: flex;
   flex-direction: row;
 }
 ul.breadcrumb {
-  padding: 10px 16px;
+  padding: 25px 166px;
   list-style: none;
 }
 ul.breadcrumb li {
@@ -20,14 +17,14 @@ ul.breadcrumb li {
 }
 ul.breadcrumb li + li:before {
   padding: 8px;
-  color: black;
+  color: #717171;
   content: "/\00a0";
 }
 ul.breadcrumb li a {
-  color: #0275d8;
+  color: #428bca;
   text-decoration: none;
 }
 ul.breadcrumb li a:hover {
-  color: #01447e;
+  color: #92b7d8;
   text-decoration: underline;
 }

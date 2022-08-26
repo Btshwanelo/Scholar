@@ -1,5 +1,6 @@
 import { format } from "date-fns";
 
+//TODO: this file should i put under table component ? im questioning the location of this file
 export const COLUMNS = [
   { Header: "Id", accessor: "id" },
   { Header: "First Name", accessor: "first_name" },

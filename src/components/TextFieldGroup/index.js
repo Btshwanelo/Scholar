@@ -1,5 +1,7 @@
 import React from "react";
 
+import PropTypes from "prop-types";
+
 import "./style.css";
 
 const TextFieldGroup = ({
@@ -26,6 +28,16 @@ const TextFieldGroup = ({
       {touched && error ? <div className="error">{error}</div> : null}
     </div>
   );
+};
+
+TextFieldGroup.propTypes = {
+  label: PropTypes.string,
+  type: PropTypes.string,
+  id: PropTypes.string,
+  placeholder: PropTypes.string,
+  error: PropTypes.string,
+  touched: PropTypes.bool,
+  fieldprops: PropTypes.object,
 };
 
 export default TextFieldGroup;
