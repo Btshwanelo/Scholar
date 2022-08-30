@@ -23,7 +23,7 @@ const Dashboard = () => {
         </div>
         <div className="second-card">
           <DashboardCard
-            title={"STUDENTS"}
+            title="Students"
             icon={<HourClassIcon />}
             navigateTo={"students"}
           />

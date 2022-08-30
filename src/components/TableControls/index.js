@@ -26,12 +26,7 @@ const TableControl = ({
           onChange={() => search()}
         />
       </div>
-      <h4>
-        Page:{" "}
-        <strong>
-          {pageIndex + 1} of {pageOptions.length}
-        </strong>{" "}
-      </h4>
+      <h4>Page: {` ${pageIndex + 1} of ${pageOptions.length} `}</h4>
       <button
         className="navigation-btn"
         onClick={() => previousPage()}

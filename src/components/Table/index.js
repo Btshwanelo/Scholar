@@ -21,15 +21,7 @@ const Table = ({
               <th {...column.getHeaderProps(column.getSortByToggleProps())}>
                 {column.render("Header")}
                 <span>
-                  {column.isSorted ? (
-                    column.isSortedDesc ? (
-                      <DownIcon />
-                    ) : (
-                      <UpIcon />
-                    )
-                  ) : (
-                    ""
-                  )}
+                  {column.isSorted && (column.isSortedDesc ? <DownIcon /> : <UpIcon />)}
                 </span>
               </th>
             ))}
