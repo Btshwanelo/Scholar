@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url(../../assets/sass/_global.scss);
 .breadcrumb-container {
   width: 100%;
 }
@@ -33,4 +34,4 @@ ul.breadcrumb li a {
 ul.breadcrumb li a:hover {
   color: #92b7d8;
   text-decoration: underline;
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */

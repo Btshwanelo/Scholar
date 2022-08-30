@@ -1,3 +1,5 @@
+@import url(../../assets/sass/_global.scss);
+
 .breadcrumb-container {
   width: 100%;
 }
@@ -17,14 +19,14 @@ ul.breadcrumb li {
 }
 ul.breadcrumb li + li:before {
   padding: 8px;
-  color: #717171;
+  color: $--text-secondary-dark-color;
   content: "/\00a0";
 }
 ul.breadcrumb li a {
-  color: #428bca;
+  color: $--text-primary-color;
   text-decoration: none;
 }
 ul.breadcrumb li a:hover {
-  color: #92b7d8;
+  color: $--text-primary-light-color;
   text-decoration: underline;
 }

@@ -23,7 +23,7 @@ const TableControl = ({
           placeholder="Search"
           value={value || ""}
           //TODO: how do i execute a function as a prop ? also the input field doesnt update as i type
-          onChange={() => search()}
+          onChange={(e) => search(e)}
         />
       </div>
       <h4>Page: {` ${pageIndex + 1} of ${pageOptions.length} `}</h4>

@@ -8,13 +8,7 @@ import { FcNext, FcPrevious } from "react-icons/fc";
 import { AiFillCaretDown, AiFillCaretUp } from "react-icons/ai";
 
 //TODO: i came up with this component for my icons, im not sure this is professional enough
-const NextIcon = () => {
-  return (
-    <>
-      <FcNext />
-    </>
-  );
-};
+export const NextIcon = () => <FcNext />;
 
 const PreviousIcon = () => {
   return (

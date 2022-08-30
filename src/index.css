@@ -24,10 +24,10 @@ p {
   margin-bottom: 1.25rem;
 }
 a {
-  color: #428bca;
+  color: #609ce1;
 }
 a:hover {
-  color: #9cc0e0;
+  color: #236ab9;
 }
 
 body {
@@ -36,5 +36,5 @@ body {
   font-size: 14px;
   line-height: 1.42857;
   color: #717171;
-  background-color: #f0f3f4;
+  background-color: #e1ecf9;
 }
