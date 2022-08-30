@@ -21,7 +21,7 @@ const DashboardLayout = ({ children }) => {
   );
 };
 
-DashboardLayout.PropTypes = {
+DashboardLayout.propTypes = {
   children: PropTypes.node,
 };
 

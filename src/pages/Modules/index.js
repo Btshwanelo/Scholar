@@ -16,8 +16,8 @@ import { COLUMNS } from "../../assets/TableColumns";
 import TableControl from "../../components/TableControls";
 
 const Modules = () => {
-  const columns = useMemo(() => COLUMNS, []);
-  const data = useMemo(() => MOCK_DATA, []);
+  const columns = COLUMNS;
+  const data = MOCK_DATA;
 
   const {
     nextPage,
@@ -50,6 +50,7 @@ const Modules = () => {
   }, 400);
 
   const search = (e) => {
+    console.log(e);
     setValue(e?.target?.value);
     onChange(e?.target?.value);
   };

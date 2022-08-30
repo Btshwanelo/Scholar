@@ -1,7 +1,44 @@
-$danger : rgb(255, 0, 0);
-$white: #fff;
-$dark-blue: #041e42;
-$grey : #bdc0c4;
-$light-grey : #f0f3f4;
-$light-bue : #428bca;
-$dark: #717171;
+/* common */
+$--common-grey-color: #e1ecf9;
+$--common-black-color: #000;
+$--common-white-color: #fff;
+$--common-primary-color: #236ab9;
+$--common-primary-light-color: #609ce1;
+$--common-secondary-color: #091d34;
+$--common-secondary-light-color: #133863;
+
+/* error */
+$--error-main-color: #cc3300;
+$--error-contrast-text-color: #fff;
+
+/* warning*/
+$--warning-main-color: #ff9966;
+$--warning-contrast-text-color: #fff;
+
+/* info */
+$--info-main-color: #0073e5;
+$--info-contrast-text-color: #fff;
+
+/* success */
+$--success-main-color: #339900;
+$--success-contrast-text-color: #fff;
+
+/* text */
+$--text-main-color: $--common-primary-light-color;
+$--text-primary-color: $--common-primary-color;
+$--text-primary-light-color: $--common-primary-light-color;
+$--text-secondary-dark-color: $--common-secondary-light-color;
+$--text-secondary-dark-color: $--common-secondary-color;
+
+/* background */
+$--background-paper-color: $--common-white-color;
+$--background-default-color: $common-grey-color;
+$--background-primary-color: $--common-primary-color;
+$--background-primary-light-color: $--common-primary-light-color;
+$--background-secondary-color: $--common-secondary-color;
+$--background-secondary-light-color: $--common-secondary-light-color;
+
+/* shape*/
+$--shape-border-radius: 0;
+
+/* transition */
