@@ -11,6 +11,9 @@
 # production
 /build
 
+# ignore scss .css.map files
+*.map
+
 # misc
 .DS_Store
 .env.local
