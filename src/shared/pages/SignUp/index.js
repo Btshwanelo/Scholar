@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 import "./signup.css";
 import * as Yup from "yup";
-import { FormLayout } from "../../Layouts";
+import { FormLayout } from "../../layouts";
 import { TextFieldGroup } from "../../components";
 
 const SignUp = () => {

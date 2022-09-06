@@ -7,7 +7,7 @@ import {
   PictureIcon,
 } from "../../assets/icons";
 import "./style.css";
-import { DashboardLayout } from "../../Layouts/";
+import { DashboardLayout } from "../../layouts/";
 import { DashboardCard } from "../../components";
 
 const Dashboard = () => {

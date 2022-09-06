@@ -1,7 +1,7 @@
 import React from "react";
 
 import "./style.css";
-import { DashboardLayout } from "../../Layouts";
+import { DashboardLayout } from "../../layouts";
 import avatar from "../../assets/images/face4.jpg";
 
 const Profile = () => {

@@ -5,7 +5,7 @@ import { useFormik } from "formik";
 import { Link } from "react-router-dom";
 
 import "./signin.css";
-import { FormLayout } from "../../Layouts";
+import { FormLayout } from "../../layouts";
 import { TextFieldGroup } from "../../components/";
 
 const SignIn = () => {

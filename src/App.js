@@ -2,7 +2,7 @@ import React from "react";
 
 import { Routes, Route } from "react-router-dom";
 
-import { appRoutes } from "./assets/Routes";
+import { appRoutes } from "./shared/assets/routes";
 
 function App() {
   return (
