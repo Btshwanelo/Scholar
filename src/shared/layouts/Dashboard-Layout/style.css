@@ -1,3 +1,12 @@
+/* common */
+/* error */
+/* warning*/
+/* info */
+/* success */
+/* text */
+/* background */
+/* shape*/
+/* transition */
 .dashboard {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;

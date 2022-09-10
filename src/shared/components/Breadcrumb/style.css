@@ -1,5 +1,13 @@
 @charset "UTF-8";
-@import url(../../assets/sass/_global.scss);
+/* common */
+/* error */
+/* warning*/
+/* info */
+/* success */
+/* text */
+/* background */
+/* shape*/
+/* transition */
 .breadcrumb-container {
   width: 100%;
 }
@@ -22,16 +30,16 @@ ul.breadcrumb li {
 
 ul.breadcrumb li + li:before {
   padding: 8px;
-  color: #717171;
+  color: var(#091d34);
   content: "/ ";
 }
 
 ul.breadcrumb li a {
-  color: #428bca;
+  color: var(#236ab9);
   text-decoration: none;
 }
 
 ul.breadcrumb li a:hover {
-  color: #92b7d8;
+  color: var(#609ce1);
   text-decoration: underline;
-} /*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

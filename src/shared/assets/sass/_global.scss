@@ -24,19 +24,19 @@ $--success-main-color: #339900;
 $--success-contrast-text-color: #fff;
 
 /* text */
-$--text-main-color: $--common-primary-light-color;
-$--text-primary-color: $--common-primary-color;
-$--text-primary-light-color: $--common-primary-light-color;
-$--text-secondary-dark-color: $--common-secondary-light-color;
-$--text-secondary-dark-color: $--common-secondary-color;
+$--text-main-color: var($--common-primary-light-color);
+$--text-primary-color: var($--common-primary-color);
+$--text-primary-light-color: var($--common-primary-light-color);
+$--text-secondary-dark-color: var($--common-secondary-light-color);
+$--text-secondary-dark-color: var($--common-secondary-color);
 
 /* background */
-$--background-paper-color: $--common-white-color;
-$--background-default-color: $common-grey-color;
-$--background-primary-color: $--common-primary-color;
-$--background-primary-light-color: $--common-primary-light-color;
-$--background-secondary-color: $--common-secondary-color;
-$--background-secondary-light-color: $--common-secondary-light-color;
+$--background-paper-color: var($--common-white-color);
+$--background-default-color: var($--common-grey-color);
+$--background-primary-color: var($--common-primary-color);
+$--background-primary-light-color: var($--common-primary-light-color);
+$--background-secondary-color: var($--common-secondary-color);
+$--background-secondary-light-color: var($--common-secondary-light-color);
 
 /* shape*/
 $--shape-border-radius: 0;
