@@ -1,12 +1,12 @@
-import React from "react";
+import React from 'react';
 
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 
-import "./style.css";
+import './style.css';
 
 const Dropdown = ({ isDropdown }) => {
   return (
-    <div className={isDropdown ? "dropdown-content show" : "dropdown-content"}>
+    <div className={isDropdown ? 'dropdown-content show' : 'dropdown-content'}>
       <a href="dashboard/profile">Profile</a>
       <a href="#">Sign Out</a>
     </div>
@@ -14,7 +14,7 @@ const Dropdown = ({ isDropdown }) => {
 };
 
 Dropdown.propTypes = {
-  isDropdown: PropTypes.bool,
+  isDropdown: PropTypes.bool
 };
 
 export default Dropdown;

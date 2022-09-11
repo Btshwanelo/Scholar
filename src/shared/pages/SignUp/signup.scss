@@ -5,8 +5,8 @@
   grid-template-rows: 70px 1fr;
   gap: 0px 0px;
   grid-template-areas:
-    "header header header header"
-    ". main main .";
+    'header header header header'
+    '. main main .';
   justify-content: stretch;
   justify-items: stretch;
   height: 100vh;

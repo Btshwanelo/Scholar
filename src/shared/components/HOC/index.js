@@ -1,5 +1,5 @@
-import PropTypes from "prop-types";
-import { useLocation, useNavigate, useParams } from "react-router-dom";
+import PropTypes from 'prop-types';
+import { useLocation, useNavigate, useParams } from 'react-router-dom';
 
 function WithRouter(Component) {
   function ComponentWithRouterProp(props) {
@@ -13,7 +13,7 @@ function WithRouter(Component) {
 }
 
 WithRouter.prototype = {
-  Component: PropTypes.node,
+  Component: PropTypes.node
 };
 
 export default WithRouter;

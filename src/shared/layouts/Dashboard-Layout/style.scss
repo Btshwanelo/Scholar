@@ -1,4 +1,4 @@
-@import "../../assets/sass/global";
+@import '../../assets/sass/global';
 
 .dashboard {
   display: grid;
@@ -10,9 +10,9 @@
   justify-content: stretch;
   justify-items: stretch;
   grid-template-areas:
-    "header header header header"
-    "breadcrumbs breadcrumbs breadcrumbs breadcrumbs"
-    "main main main main";
+    'header header header header'
+    'breadcrumbs breadcrumbs breadcrumbs breadcrumbs'
+    'main main main main';
   min-height: 100vh;
 }
 

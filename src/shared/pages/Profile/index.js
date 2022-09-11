@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 
-import "./style.css";
-import { DashboardLayout } from "../../layouts";
-import avatar from "../../assets/images/face4.jpg";
+import './style.css';
+import { DashboardLayout } from '../../layouts';
+import avatar from '../../assets/images/face4.jpg';
 
 const Profile = () => {
   return (

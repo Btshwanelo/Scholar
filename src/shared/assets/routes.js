@@ -7,53 +7,53 @@ import {
   Profile,
   SignIn,
   SignUp,
-  Students,
-} from "../pages";
+  Students
+} from '../pages';
 
 export const appRoutes = [
   {
-    path: "/",
-    name: "landing",
-    component: <Landing />,
+    path: '/',
+    name: 'landing',
+    component: <Landing />
   },
   {
-    path: "/dashboard",
-    name: "Dashboard",
-    component: <Dashboard />,
+    path: '/dashboard',
+    name: 'Dashboard',
+    component: <Dashboard />
   },
   {
-    path: "/signin",
-    name: "Signin",
-    component: <SignIn />,
+    path: '/signin',
+    name: 'Signin',
+    component: <SignIn />
   },
   {
-    path: "/signup",
-    name: "Signup",
-    component: <SignUp />,
+    path: '/signup',
+    name: 'Signup',
+    component: <SignUp />
   },
   {
-    path: "/dashboard/profile",
-    name: "Profile",
-    component: <Profile />,
+    path: '/dashboard/profile',
+    name: 'Profile',
+    component: <Profile />
   },
   {
-    path: "/dashboard/students",
-    name: "Students",
-    component: <Students />,
+    path: '/dashboard/students',
+    name: 'Students',
+    component: <Students />
   },
   {
-    path: "/dashboard/courses",
-    name: "Courses",
-    component: <Courses />,
+    path: '/dashboard/courses',
+    name: 'Courses',
+    component: <Courses />
   },
   {
-    path: "/dashboard/modules",
-    name: "Modules",
-    component: <Modules />,
+    path: '/dashboard/modules',
+    name: 'Modules',
+    component: <Modules />
   },
   {
-    path: "*",
-    name: "Notfound",
-    component: <Notfound />,
-  },
+    path: '*',
+    name: 'Notfound',
+    component: <Notfound />
+  }
 ];

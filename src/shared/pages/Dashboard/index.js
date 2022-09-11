@@ -1,47 +1,26 @@
-import React from "react";
+import React from 'react';
 
-import {
-  BookmarkIcon,
-  HourClassIcon,
-  LabelIcon,
-  PictureIcon,
-} from "../../assets/icons";
-import "./style.css";
-import { DashboardLayout } from "../../layouts/";
-import { DashboardCard } from "../../components";
+import { BookmarkIcon, HourClassIcon, LabelIcon, PictureIcon } from '../../assets/icons';
+import './style.css';
+import { DashboardLayout } from '../../layouts/';
+import { DashboardCard } from '../../components';
 
 const Dashboard = () => {
   return (
     <DashboardLayout>
       <div className="main-container">
         <div className="first-card">
-          <DashboardCard
-            title={"PROFILE"}
-            icon={<BookmarkIcon />}
-            navigateTo={"profile"}
-          />
+          <DashboardCard title={'PROFILE'} icon={<BookmarkIcon />} navigateTo={'profile'} />
         </div>
         <div className="second-card">
-          <DashboardCard
-            title="Students"
-            icon={<HourClassIcon />}
-            navigateTo={"students"}
-          />
+          <DashboardCard title="Students" icon={<HourClassIcon />} navigateTo={'students'} />
         </div>
 
         <div className="third-card">
-          <DashboardCard
-            title={"MODULES"}
-            icon={<LabelIcon />}
-            navigateTo={"modules"}
-          />
+          <DashboardCard title={'MODULES'} icon={<LabelIcon />} navigateTo={'modules'} />
         </div>
         <div className="fourth-card">
-          <DashboardCard
-            title={"COURSES"}
-            icon={<PictureIcon />}
-            navigateTo={"courses"}
-          />
+          <DashboardCard title={'COURSES'} icon={<PictureIcon />} navigateTo={'courses'} />
         </div>
       </div>
     </DashboardLayout>

@@ -1,18 +1,15 @@
-import React from "react";
+import React from 'react';
 
-import PropTypes from "prop-types";
-import { useNavigate } from "react-router-dom";
+import PropTypes from 'prop-types';
+import { useNavigate } from 'react-router-dom';
 
-import "./style.css";
+import './style.css';
 
 const DashboardCard = ({ title, icon, navigateTo }) => {
   const navigate = useNavigate();
   return (
     <div className="dashboard-card">
-      <div
-        className="card-body"
-        onClick={() => navigate(`/dashboard/${navigateTo}`)}
-      >
+      <div className="card-body" onClick={() => navigate(`/dashboard/${navigateTo}`)}>
         {icon}
 
         <h3>{title}</h3>
@@ -24,7 +21,7 @@ const DashboardCard = ({ title, icon, navigateTo }) => {
 DashboardCard.propTypes = {
   title: PropTypes.string,
   icon: PropTypes.node,
-  navigateTo: PropTypes.string,
+  navigateTo: PropTypes.string
 };
 
 export default DashboardCard;

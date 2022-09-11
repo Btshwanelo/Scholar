@@ -1,12 +1,12 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 
-import "./style.css";
-import Dropdown from "../Dropdown";
-import logo from "../../assets/images/logo.svg";
-import avatar from "../../assets/images/face4.jpg";
-import { UpIcon, DownIcon } from "../../assets/icons";
+import './style.css';
+import Dropdown from '../Dropdown';
+import logo from '../../assets/images/logo.svg';
+import avatar from '../../assets/images/face4.jpg';
+import { UpIcon, DownIcon } from '../../assets/icons';
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -15,7 +15,7 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="navbar-logo">
-        <div onClick={() => navigate("/dashboard")}>
+        <div onClick={() => navigate('/dashboard')}>
           <img src={logo} alt="logo" />
         </div>
       </div>

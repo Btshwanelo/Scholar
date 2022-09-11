@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
 
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 
-import "./landing.css";
-import { Navbar } from "../../components/";
+import './landing.css';
+import { Navbar } from '../../components/';
 
 const Landing = () => {
   const navigate = useNavigate();
@@ -16,10 +16,10 @@ const Landing = () => {
       <div className="landing-main">
         <h1>WELCOME TO SCHOLAR</h1>
         <div>
-          <button className="signin-btn" onClick={() => navigate("/signin")}>
+          <button className="signin-btn" onClick={() => navigate('/signin')}>
             Sign In
           </button>
-          <button className="signup-btn" onClick={() => navigate("/signup")}>
+          <button className="signup-btn" onClick={() => navigate('/signup')}>
             Sign Up
           </button>
         </div>

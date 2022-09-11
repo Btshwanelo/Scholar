@@ -1,16 +1,10 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
-import {
-  useTable,
-  useSortBy,
-  useGlobalFilter,
-  usePagination,
-  useAsyncDebounce,
-} from "react-table";
-import PropTypes from "prop-types";
+import { useTable, useSortBy, useGlobalFilter, usePagination, useAsyncDebounce } from 'react-table';
+import PropTypes from 'prop-types';
 
-import "./style.css";
-import { UpIcon, DownIcon, NextIcon, PreviousIcon } from "../../assets/icons";
+import './style.css';
+import { UpIcon, DownIcon, NextIcon, PreviousIcon } from '../../assets/icons';
 
 const Table = ({ data, columns }) => {
   const {
@@ -25,11 +19,11 @@ const Table = ({ data, columns }) => {
     getTableBodyProps,
     headerGroups,
     getTableProps,
-    setGlobalFilter,
+    setGlobalFilter
   } = useTable(
     {
       columns,
-      data,
+      data
     },
     useGlobalFilter,
     useSortBy,
@@ -55,7 +49,7 @@ const Table = ({ data, columns }) => {
           <input
             className="table-input"
             placeholder="Search"
-            value={value || ""}
+            value={value || ''}
             onChange={(e) => search(e)}
           />
         </div>
@@ -67,11 +61,7 @@ const Table = ({ data, columns }) => {
         >
           <PreviousIcon />
         </button>
-        <button
-          className="navigation-btn"
-          onClick={() => nextPage()}
-          disabled={!canNextPage}
-        >
+        <button className="navigation-btn" onClick={() => nextPage()} disabled={!canNextPage}>
           <NextIcon />
         </button>
       </div>
@@ -81,10 +71,9 @@ const Table = ({ data, columns }) => {
             <tr {...headerGroup.getHeaderGroupProps()}>
               {headerGroup.headers.map((column) => (
                 <th {...column.getHeaderProps(column.getSortByToggleProps())}>
-                  {column.render("Header")}
+                  {column.render('Header')}
                   <span>
-                    {column.isSorted &&
-                      (column.isSortedDesc ? <DownIcon /> : <UpIcon />)}
+                    {column.isSorted && (column.isSortedDesc ? <DownIcon /> : <UpIcon />)}
                   </span>
                 </th>
               ))}
@@ -97,9 +86,7 @@ const Table = ({ data, columns }) => {
             return (
               <tr {...row.getRowProps()}>
                 {row.cells.map((cell) => {
-                  return (
-                    <td {...cell.getCellProps()}> {cell.render("Cell")}</td>
-                  );
+                  return <td {...cell.getCellProps()}> {cell.render('Cell')}</td>;
                 })}
               </tr>
             );
@@ -112,7 +99,7 @@ const Table = ({ data, columns }) => {
 
 Table.propTypes = {
   data: PropTypes.array,
-  columns: PropTypes.array,
+  columns: PropTypes.array
 };
 
 export default Table;

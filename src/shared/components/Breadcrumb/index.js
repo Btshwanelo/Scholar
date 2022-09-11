@@ -1,13 +1,13 @@
-import React from "react";
+import React from 'react';
 
-import PropTypes from "prop-types";
-import { useNavigate } from "react-router-dom";
+import PropTypes from 'prop-types';
+import { useNavigate } from 'react-router-dom';
 
-import "./style.css";
-import WithRouter from "../HOC/index";
+import './style.css';
+import WithRouter from '../HOC/index';
 
 const Breadcrumb = (props) => {
-  const pathnames = props.router.location.pathname.split("/").filter((x) => x);
+  const pathnames = props.router.location.pathname.split('/').filter((x) => x);
 
   const navigate = useNavigate();
 
@@ -15,7 +15,7 @@ const Breadcrumb = (props) => {
     <div className="breadcrumb-container">
       <ul className="breadcrumb">
         {pathnames.map((name, index) => {
-          const routeTo = `/${pathnames.slice(0, index + 1).join("/")}`;
+          const routeTo = `/${pathnames.slice(0, index + 1).join('/')}`;
           const isLast = index === pathnames.length - 1;
 
           return isLast ? (
@@ -32,7 +32,7 @@ const Breadcrumb = (props) => {
 };
 
 Breadcrumb.propTypes = {
-  props: PropTypes.object,
+  props: PropTypes.object
 };
 
 export default WithRouter(Breadcrumb);

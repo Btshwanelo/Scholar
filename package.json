@@ -44,6 +44,9 @@
   },
   "devDependencies": {
     "@svgr/webpack": "^6.2.1",
-    "gh-pages": "^4.0.0"
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-react": "^7.31.8",
+    "gh-pages": "^4.0.0",
+    "prettier": "2.7.1"
   }
 }

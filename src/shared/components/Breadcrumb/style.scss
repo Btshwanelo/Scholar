@@ -20,7 +20,7 @@ ul.breadcrumb li {
 ul.breadcrumb li + li:before {
   padding: 8px;
   color: $--text-secondary-dark-color;
-  content: "/\00a0";
+  content: '/\00a0';
 }
 ul.breadcrumb li a {
   color: $--text-primary-color;

@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
 
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 
-import "./style.css";
-import { Navbar } from "../../components";
+import './style.css';
+import { Navbar } from '../../components';
 
 const FormLayout = ({ children }) => {
   return (
@@ -19,7 +19,7 @@ const FormLayout = ({ children }) => {
 };
 
 FormLayout.propTypes = {
-  children: PropTypes.node,
+  children: PropTypes.node
 };
 
 export default FormLayout;
