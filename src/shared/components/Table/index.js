@@ -1,10 +1,9 @@
-import React, { useState } from 'react';
-
-import { useTable, useSortBy, useGlobalFilter, usePagination, useAsyncDebounce } from 'react-table';
 import PropTypes from 'prop-types';
+import React, { useState } from 'react';
+import { useAsyncDebounce, useGlobalFilter, usePagination, useSortBy, useTable } from 'react-table';
 
+import { DownIcon, NextIcon, PreviousIcon, UpIcon } from '../../assets/icons';
 import './style.css';
-import { UpIcon, DownIcon, NextIcon, PreviousIcon } from '../../assets/icons';
 
 const Table = ({ data, columns }) => {
   const {

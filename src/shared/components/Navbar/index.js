@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
-
 import { useNavigate } from 'react-router-dom';
 
-import './style.css';
-import Dropdown from '../Dropdown';
-import logo from '../../assets/images/logo.svg';
+import { DownIcon, UpIcon } from '../../assets/icons';
 import avatar from '../../assets/images/face4.jpg';
-import { UpIcon, DownIcon } from '../../assets/icons';
+import logo from '../../assets/images/logo.svg';
+import Dropdown from '../Dropdown';
+import './style.css';
 
 const Navbar = () => {
   const navigate = useNavigate();

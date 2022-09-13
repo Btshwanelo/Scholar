@@ -1,11 +1,11 @@
+import { AiFillCaretDown, AiFillCaretUp } from 'react-icons/ai';
+import { FcNext, FcPrevious } from 'react-icons/fc';
 import {
   MdBookmarkBorder,
-  MdPictureInPicture,
   MdHourglassEmpty,
-  MdLabelImportantOutline
+  MdLabelImportantOutline,
+  MdPictureInPicture
 } from 'react-icons/md';
-import { FcNext, FcPrevious } from 'react-icons/fc';
-import { AiFillCaretDown, AiFillCaretUp } from 'react-icons/ai';
 
 export const NextIcon = () => <FcNext />;
 

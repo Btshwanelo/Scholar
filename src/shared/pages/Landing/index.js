@@ -1,9 +1,8 @@
 import React from 'react';
-
 import { useNavigate } from 'react-router-dom';
 
-import './landing.css';
 import { Navbar } from '../../components/';
+import './landing.css';
 
 const Landing = () => {
   const navigate = useNavigate();

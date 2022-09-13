@@ -1,9 +1,9 @@
 import React from 'react';
 
 import { BookmarkIcon, HourClassIcon, LabelIcon, PictureIcon } from '../../assets/icons';
-import './style.css';
-import { DashboardLayout } from '../../layouts/';
 import { DashboardCard } from '../../components';
+import { DashboardLayout } from '../../layouts/';
+import './style.css';
 
 const Dashboard = () => {
   return (

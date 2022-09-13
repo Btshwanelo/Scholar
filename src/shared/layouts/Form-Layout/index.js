@@ -1,9 +1,8 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 
-import PropTypes from 'prop-types';
-
-import './style.css';
 import { Navbar } from '../../components';
+import './style.css';
 
 const FormLayout = ({ children }) => {
   return (

@@ -1,12 +1,11 @@
-import React from 'react';
-
 import { useFormik } from 'formik';
+import React from 'react';
 import { Link } from 'react-router-dom';
-
-import './signup.css';
 import * as Yup from 'yup';
-import { FormLayout } from '../../layouts';
+
 import { TextFieldGroup } from '../../components';
+import { FormLayout } from '../../layouts';
+import './signup.css';
 
 const SignUp = () => {
   const formik = useFormik({

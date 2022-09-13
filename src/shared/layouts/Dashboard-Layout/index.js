@@ -1,9 +1,8 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 
-import PropTypes from 'prop-types';
-
+import { Breadcrumb, Navbar } from '../../components';
 import './style.css';
-import { Navbar, Breadcrumb } from '../../components';
 
 const DashboardLayout = ({ children }) => {
   return (

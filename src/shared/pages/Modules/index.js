@@ -1,11 +1,10 @@
+import { format } from 'date-fns';
 import React from 'react';
 
-import { format } from 'date-fns';
-
-import './style.css';
+import MOCK_DATA from '../../assets/MOCK_DATA.json';
 import { Table } from '../../components';
 import { DashboardLayout } from '../../layouts';
-import MOCK_DATA from '../../assets/MOCK_DATA.json';
+import './style.css';
 
 const Modules = () => {
   const data = MOCK_DATA;

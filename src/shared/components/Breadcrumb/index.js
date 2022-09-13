@@ -1,10 +1,9 @@
-import React from 'react';
-
 import PropTypes from 'prop-types';
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
-import './style.css';
 import WithRouter from '../HOC/index';
+import './style.css';
 
 const Breadcrumb = (props) => {
   const pathnames = props.router.location.pathname.split('/').filter((x) => x);
