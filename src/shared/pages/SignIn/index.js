@@ -9,7 +9,6 @@ import { FormLayout } from '../../layouts';
 import './signin.css';
 
 const SignIn = () => {
-  const schools = schools;
   const formik = useFormik({
     initialValues: {
       Email: '',
