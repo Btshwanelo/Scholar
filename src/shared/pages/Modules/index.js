@@ -1,27 +1,18 @@
 import { format } from 'date-fns';
 import React from 'react';
 
-import MOCK_DATA from '../../assets/MOCK_DATA.json';
+import modules from '../../assets/mock-data/modules.json';
 import { Table } from '../../components';
 import { DashboardLayout } from '../../layouts';
 import './style.css';
 
 const Modules = () => {
-  const data = MOCK_DATA;
+  const data = modules;
 
   const columns = [
     { Header: 'Id', accessor: 'id' },
-    { Header: 'First Name', accessor: 'first_name' },
-    { Header: 'Last Name', accessor: 'last_name' },
-    {
-      Header: 'Date of Birth',
-      accessor: 'date_of_birth',
-      Cell: ({ value }) => {
-        return format(new Date(value), 'dd/MM/yyy');
-      }
-    },
-    { Header: 'Country', accessor: 'country' },
-    { Header: 'Phone', accessor: 'phone' }
+    { Header: 'Module Name', accessor: 'module_name' },
+    { Header: 'Module Code', accessor: 'module_code' }
   ];
 
   return (
