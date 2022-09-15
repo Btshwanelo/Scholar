@@ -3,29 +3,25 @@ import React from 'react';
 import avatar from '../../assets/images/face4.jpg';
 import { DashboardLayout } from '../../layouts';
 import './style.css';
+import schools from '../../assets/mock-data/schools.json'
 
 const Profile = () => {
-  const profile = {
-    schoolName: 'Orlando High',
-    adress: '6502 Mooki St, Orlando East',
-    email: 'bucibot@gmail.com',
-    contactNo: +27726589444
-  };
+  const profile = schools[0]
   return (
     <DashboardLayout>
       <div className="profile">
         <div className="profile-side">
           <div>
             <img src={avatar} alt="avatar" />
-            <h2>{profile.schoolName}</h2>
-            <p>{profile.adress}</p>
+            <h2>{profile.name}</h2>
+            <p>{profile.address}</p>
           </div>
         </div>
         <div className="profile-main">
           <div>
             <div>
               <h3>Name</h3>
-              <p>{profile.schoolName}</p>
+              <p>{profile.name}</p>
             </div>
             <div>
               <h3>Email</h3>
@@ -33,7 +29,7 @@ const Profile = () => {
             </div>
             <div>
               <h3>Phone</h3>
-              <p>{profile.contactNo}</p>
+              <p>{profile.phone}</p>
             </div>
 
             <button>EDIT</button>
