@@ -1,18 +1,20 @@
 import { format } from 'date-fns';
 import React from 'react';
 
-import MOCK_DATA from '../../assets/MOCK_DATA.json';
+import students from '../../assets/mock-data/students.json';
 import { Table } from '../../components';
 import { DashboardLayout } from '../../layouts';
 import './style.css';
 
 const Students = () => {
-  const data = MOCK_DATA;
+  const data = students;
 
   const columns = [
     { Header: 'Id', accessor: 'id' },
-    { Header: 'First Name', accessor: 'first_name' },
-    { Header: 'Last Name', accessor: 'last_name' },
+    { Header: 'First Name', accessor: 'student_name' },
+    { Header: 'Last Name', accessor: 'surname' },
+    { Header: 'Gender', accessor: 'gender' },
+    { Header: 'Email', accessor: 'email' },
     {
       Header: 'Date of Birth',
       accessor: 'date_of_birth',
@@ -20,8 +22,7 @@ const Students = () => {
         return format(new Date(value), 'dd/MM/yyy');
       }
     },
-    { Header: 'Country', accessor: 'country' },
-    { Header: 'Phone', accessor: 'phone' }
+    { Header: 'Phone', accessor: 'contact_number' }
   ];
 
   return (
