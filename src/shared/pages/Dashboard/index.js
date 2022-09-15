@@ -13,7 +13,7 @@ const Dashboard = () => {
           <DashboardCard title={'PROFILE'} icon={<BookmarkIcon />} navigateTo={'profile'} />
         </div>
         <div className="students-card">
-          <DashboardCard title="Students" icon={<HourClassIcon />} navigateTo={'students'} />
+          <DashboardCard title="STUDENTS" icon={<HourClassIcon />} navigateTo={'students'} />
         </div>
 
         <div className="modules-card">
