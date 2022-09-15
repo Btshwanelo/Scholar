@@ -7,7 +7,7 @@
   grid-auto-flow: row;
   justify-content: stretch;
   justify-items: stretch;
-  grid-template-areas: 'header header header header' 'main main main main';
+  grid-template-areas: "header header header header" "main main main main";
   height: 100vh;
   background: #f2edf3;
 }
@@ -33,7 +33,7 @@
   justify-content: center;
   margin-top: 40px;
   -moz-column-gap: 20px;
-  column-gap: 20px;
+       column-gap: 20px;
 }
 
 .signin-btn {
@@ -68,4 +68,4 @@
 .signup-btn:hover {
   cursor: pointer;
   background: #7dc4ee;
-} /*# sourceMappingURL=landing.css.map */
+}/*# sourceMappingURL=landing.css.map */

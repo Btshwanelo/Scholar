@@ -7,7 +7,7 @@ table {
 td {
   border: 0px solid #f2edf3;
   text-align: left;
-  font-family: 'ubuntu-medium', sans-serif;
+  font-family: "ubuntu-medium", sans-serif;
   font-weight: initial;
   font-size: 0.875em;
   padding: 0.9375rem;
@@ -16,7 +16,7 @@ td {
 th {
   border: 0px solid #f2edf3;
   text-align: left;
-  font-family: 'ubuntu-medium', sans-serif;
+  font-family: "ubuntu-medium", sans-serif;
   font-weight: bold;
   font-size: 0.875em;
   padding: 0.9375rem;
@@ -61,4 +61,4 @@ tr:nth-child(even) {
   font-weight: 400;
   border-radius: 2px;
   margin: 0 10px;
-} /*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

@@ -18,30 +18,30 @@
   justify-items: stretch;
   min-width: 1000px;
 }
-.first-card {
+.profile-card {
   grid-area: C1;
 }
 
-.first-card .dashboard-card {
+.profile-card .dashboard-card {
   background: linear-gradient(to right, #ffbf96, #fe7096);
 }
-.second-card {
+.students-card {
   grid-area: C2;
 }
-.second-card .dashboard-card {
+.students-card .dashboard-card {
   background: linear-gradient(to right, #90caf9, #047edf 99%);
 }
-.third-card {
+.modules-card {
   grid-area: C3;
 }
 
-.third-card .dashboard-card {
+.modules-card .dashboard-card {
   background: linear-gradient(to right, #84d9d2, #07cdae);
 }
-.fourth-card {
+.courses-card {
   grid-area: C4;
 }
 
-.fourth-card .dashboard-card {
+.courses-card .dashboard-card {
   background: linear-gradient(to right, #da8cff, #9a55ff);
 }

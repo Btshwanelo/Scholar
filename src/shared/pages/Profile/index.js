@@ -5,29 +5,35 @@ import { DashboardLayout } from '../../layouts';
 import './style.css';
 
 const Profile = () => {
+  const profile = {
+    schoolName: 'Orlando High',
+    adress: '6502 Mooki St, Orlando East',
+    email: 'bucibot@gmail.com',
+    contactNo: +27726589444
+  };
   return (
     <DashboardLayout>
       <div className="profile">
         <div className="profile-side">
           <div>
             <img src={avatar} alt="avatar" />
-            <h2>Orlando High</h2>
-            <p>6502 Mooki St, Orlando East</p>
+            <h2>{profile.schoolName}</h2>
+            <p>{profile.adress}</p>
           </div>
         </div>
         <div className="profile-main">
           <div>
             <div>
               <h3>Name</h3>
-              <p>Orlando High</p>
+              <p>{profile.schoolName}</p>
             </div>
             <div>
               <h3>Email</h3>
-              <p>bucibot@gmail.com</p>
+              <p>{profile.email}</p>
             </div>
             <div>
               <h3>Phone</h3>
-              <p>000 000 0000</p>
+              <p>{profile.contactNo}</p>
             </div>
 
             <button>EDIT</button>

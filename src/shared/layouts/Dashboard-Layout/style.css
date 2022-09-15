@@ -16,7 +16,7 @@
   grid-auto-flow: row;
   justify-content: stretch;
   justify-items: stretch;
-  grid-template-areas: 'header header header header' 'breadcrumbs breadcrumbs breadcrumbs breadcrumbs' 'main main main main';
+  grid-template-areas: "header header header header" "breadcrumbs breadcrumbs breadcrumbs breadcrumbs" "main main main main";
   min-height: 100vh;
 }
 
@@ -42,4 +42,4 @@
   justify-content: center;
   width: 100%;
   padding: 0 166px;
-} /*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

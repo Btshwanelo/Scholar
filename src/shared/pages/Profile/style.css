@@ -7,7 +7,7 @@
   grid-auto-flow: row;
   justify-content: stretch;
   justify-items: stretch;
-  grid-template-areas: 'side main main  main';
+  grid-template-areas: "side main main  main";
   width: 100%;
 }
 
@@ -88,4 +88,4 @@
   color: #aeacac;
   font-weight: 300;
   text-align: center;
-} /*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

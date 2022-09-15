@@ -7,7 +7,7 @@ const Dropdown = ({ isDropdown }) => {
   return (
     <div className={isDropdown ? 'dropdown-content show' : 'dropdown-content'}>
       <a href="dashboard/profile">Profile</a>
-      <a href="#">Sign Out</a>
+      <a href="dashboard/profile">Sign Out</a>
     </div>
   );
 };

@@ -31,7 +31,7 @@ ul.breadcrumb li {
 ul.breadcrumb li + li:before {
   padding: 8px;
   color: var(#091d34);
-  content: '/ ';
+  content: "/ ";
 }
 
 ul.breadcrumb li a {
@@ -42,4 +42,4 @@ ul.breadcrumb li a {
 ul.breadcrumb li a:hover {
   color: var(#609ce1);
   text-decoration: underline;
-} /*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

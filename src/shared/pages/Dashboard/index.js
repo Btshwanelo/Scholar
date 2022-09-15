@@ -9,17 +9,17 @@ const Dashboard = () => {
   return (
     <DashboardLayout>
       <div className="main-container">
-        <div className="first-card">
+        <div className="profile-card">
           <DashboardCard title={'PROFILE'} icon={<BookmarkIcon />} navigateTo={'profile'} />
         </div>
-        <div className="second-card">
+        <div className="students-card">
           <DashboardCard title="Students" icon={<HourClassIcon />} navigateTo={'students'} />
         </div>
 
-        <div className="third-card">
+        <div className="modules-card">
           <DashboardCard title={'MODULES'} icon={<LabelIcon />} navigateTo={'modules'} />
         </div>
-        <div className="fourth-card">
+        <div className="courses-card">
           <DashboardCard title={'COURSES'} icon={<PictureIcon />} navigateTo={'courses'} />
         </div>
       </div>
