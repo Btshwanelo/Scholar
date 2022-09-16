@@ -3,6 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import * as Yup from 'yup';
 
+import schools from '../../assets/mock-data/schools.json';
 import { TextFieldGroup } from '../../components';
 import { FormLayout } from '../../layouts';
 import './signup.css';
@@ -29,11 +30,18 @@ const SignUp = () => {
         .min(2, 'Password is too short - should be 8 chars minimum.')
         .matches(/[a-zA-Z]/, 'Password can only contain Latin letters.'),
       //TODO: add confirmpassword validation
-      ConfirmPassword: Yup.string().required()
+      ConfirmPassword: Yup.string().oneOf([Yup.ref('Password'), null], 'Passwords must match')
     }),
     onSubmit: (values) => {
-      alert(JSON.stringify(values, null, 2));
-      //TODO: compare registration email with emails in the schoools, if matches then user already registerd, if doesnt match then register user and route to signi page for user to log in
+      for (let i = 0; i < schools.length; i++) {
+        const element = schools[i];
+        if (element.email === values.email) {
+          return console.log('User already registerd');
+        } else {
+          schools.push(values);
+          return console.log('User registerd', schools[50]);
+        }
+      }
     }
   });
 
@@ -46,9 +54,9 @@ const SignUp = () => {
           type={'text'}
           id={'Name'}
           placeholder={'Name'}
-          error={formik.errors.firstName}
-          touched={formik.touched.firstName}
-          fieldprops={formik.getFieldProps('firstName')}
+          error={formik.errors.Name}
+          touched={formik.touched.Name}
+          fieldprops={formik.getFieldProps('Name')}
         />
         <TextFieldGroup
           label={'Email'}
@@ -61,7 +69,7 @@ const SignUp = () => {
         />
         <TextFieldGroup
           label={'Phone'}
-          type={'text'}
+          type={'number'}
           id={'Phone'}
           placeholder={'Phone'}
           error={formik.errors.Phone}
@@ -79,12 +87,12 @@ const SignUp = () => {
         />
         <TextFieldGroup
           label={'Password'}
-          type={'email'}
-          id={'email'}
-          placeholder={'Email'}
-          error={formik.errors.email}
-          touched={formik.touched.email}
-          fieldprops={formik.getFieldProps('email')}
+          type={'password'}
+          id={'password'}
+          placeholder={'Password'}
+          error={formik.errors.Password}
+          touched={formik.touched.Password}
+          fieldprops={formik.getFieldProps('Password')}
         />
         <TextFieldGroup
           label={'Confirm Pssword'}
