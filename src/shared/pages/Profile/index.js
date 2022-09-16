@@ -1,12 +1,12 @@
 import React from 'react';
 
 import avatar from '../../assets/images/face4.jpg';
+import schools from '../../assets/mock-data/schools.json';
 import { DashboardLayout } from '../../layouts';
 import './style.css';
-import schools from '../../assets/mock-data/schools.json'
 
 const Profile = () => {
-  const profile = schools[0]
+  const profile = schools[0];
   return (
     <DashboardLayout>
       <div className="profile">

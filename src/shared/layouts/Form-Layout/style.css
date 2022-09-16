@@ -4,7 +4,7 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 70px 1fr;
   gap: 0px 0px;
-  grid-template-areas: "header header header header" "main main main main";
+  grid-template-areas: 'header header header header' 'main main main main';
   justify-content: stretch;
   justify-items: stretch;
   height: 100vh;
@@ -34,4 +34,4 @@
   height: fit-content;
   margin: auto;
   padding: 2.5rem 2.5rem;
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */

@@ -11,7 +11,7 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 200px 200px;
   gap: 25px 25px;
-  grid-template-areas: "C1 C1 C2 C2" "C3 C3 C4 C4";
+  grid-template-areas: 'C1 C1 C2 C2' 'C3 C3 C4 C4';
   justify-content: stretch;
   justify-items: stretch;
   min-width: 1000px;
@@ -47,4 +47,4 @@
 
 .courses-card .dashboard-card {
   background: linear-gradient(to right, #da8cff, #9a55ff);
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
