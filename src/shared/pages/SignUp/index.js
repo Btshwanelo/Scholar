@@ -21,15 +21,12 @@ const SignUp = () => {
     validationSchema: Yup.object({
       Name: Yup.string().max(15, 'Must be 15 characters or less').required('Required'),
       Email: Yup.string().email('Invalid email address').required('Required'),
-      //TODO: added phone validation
       Phone: Yup.string().required(),
-      //TODO: add address validation
       Address: Yup.string().required(),
       Password: Yup.string()
         .required('No password provided.')
         .min(2, 'Password is too short - should be 8 chars minimum.')
         .matches(/[a-zA-Z]/, 'Password can only contain Latin letters.'),
-      //TODO: add confirmpassword validation
       ConfirmPassword: Yup.string().oneOf([Yup.ref('Password'), null], 'Passwords must match')
     }),
     onSubmit: (values) => {
